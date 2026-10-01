@@ -1,24 +1,33 @@
-# Screened Tessera–Grok handoff
+# Screened Tessera/Grok handoff
 
-This public repository contains a reviewed handoff assembled from selected project material. It is not a complete export of the Replit account, conversation history, workspace, or attachments.
+This public repository contains the unique, reviewed Tessera/Grok handoff materials selected from the workspace. It is not a full Replit account or workspace export.
 
-## Download the handoff
+## Rebuild the archives
 
-- [Main handoff ZIP](grok-handoff.zip) — reviewed instructions and summaries, selected source excerpts, isolated mockup, WebP and brand assets, link index, scope notes, and SHA-256 manifest.
-- [PNG image companion ZIP](grok-handoff-images.zip) — the original PNG product images and their manifest.
+The GitHub connector rejected the archives as single uploads. They are stored as numbered 2 MiB parts. Download this repository with **Code → Download ZIP** or clone it, extract that repository ZIP, and run:
 
-Extract both ZIPs into the same folder so image paths merge into the locations referenced by the main packet.
+```bash
+python3 reassemble_handoff.py
+```
 
-## Privacy and scope
+The script reconstructs both archives and verifies each SHA-256. Then extract `grok-handoff.zip` and `grok-handoff-images.zip` into the same folder so the PNG originals merge at their indexed paths.
 
-The bundle excludes website customer and payment-card information, storefront code paths connected to that data, credentials, private runtime stores, logs, backups, private archives, and unreviewed screenshots. The included simulation adapter is a bounded source excerpt, not a complete or runnable service. Private archive contents and unavailable account history were not screened or included.
+- Main handoff files (excluding its manifest): 712
+- PNG image originals: 132
+- Main archive parts: 23
+- Image companion parts: 30
 
-The transcript and copied prompts are historical source material with limited provenance; they are not verified facts or reuse permissions. Public references and included assets may have independent rights. No license is granted by this repository.
+## Compression and encryption
 
-## Archive checksums
+The archives use standard, lossless ZIP/Deflate compression at level 9. PNG and WebP assets are already compressed, so further lossless savings are limited; no image content was changed. The files are **not encrypted**: this is a public repository, and encryption would prevent readers from opening the handoff unless a private decryption key were distributed separately. SHA-256 checksums detect corruption but are not encryption.
 
-Main handoff ZIP SHA-256: `3e7cca709550bfa5b30d053f9f45ab37ba3895694d8c7c485edd450d80e18d80`
+## Privacy and rights boundary
 
-PNG image companion ZIP SHA-256: `8b54f55a520cc0d7fc286ddb3f7bdd6253899f45d8ad97e4eeb17bcdfa772846`
+Excluded: customer/user records, payment-card data, credentials, environment values, private runtime stores/logs/backups, private user-supplied share identifiers, unreviewed archive contents, duplicate files, and code/configuration/service paths that can access customer or transaction data. Storefront-integrated Tessera routes and private-data handling internals are omitted. The included simulation gateway is only a screened source excerpt; it relies on an injected Tessera-owned store, and production isolation is unverified.
 
-The ZIPs also contain manifests for their included files.
+The handoff does not establish that historical generated records are genuine conversations, that an external service is deployed, or that third-party sources are cleared for reuse. This repository grants no license to third-party code, text, images, models, or datasets.
+
+## Archive SHA-256
+
+- `grok-handoff.zip`: `24b61d5c582b1342637f41611c093bfcc7834b50e1117c6cd642f660c77fd9d4`
+- `grok-handoff-images.zip`: `6fd76ff535819bdf50aacccc1ccb0bf557a514e78ae830861ce059fc6c3f37c6`
