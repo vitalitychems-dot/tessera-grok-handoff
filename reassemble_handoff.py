@@ -4,7 +4,7 @@ import hashlib
 
 ROOT = Path(__file__).resolve().parent
 EXPECTED = {
-    "grok-handoff.zip": "24b61d5c582b1342637f41611c093bfcc7834b50e1117c6cd642f660c77fd9d4",
+    "grok-handoff.zip": "5eb22d30dede86eab0b4bf9ebd664efc115f38cb21391c8fd4dfb35e7a5d6af8",
     "grok-handoff-images.zip": "6fd76ff535819bdf50aacccc1ccb0bf557a514e78ae830861ce059fc6c3f37c6",
 }
 

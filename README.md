@@ -24,31 +24,31 @@ The project-status document is dated **September 30, 2026**. It records:
 
 The handoff does **not** verify an independent deployment, private durable hosting or backups, live provider authorization or calls, citation correctness, answer quality, or reliable deployed deletion and retention. The safe simulation-gateway excerpt is incomplete, expects an injected Tessera-owned store, and is not a runnable service. No fine-tuning corpus has been approved or used. Nothing here establishes consciousness, biological equivalence, independent agency, or a persistent self.
 
-Five supplied Drive archives, about 4.87 GB combined, were inventoried but not fully read or included. In the bounded conversation-shaped review described in the status document, 636 reviewed occurrences yielded 610 unique hashes, and no complete provider-linked human/model turn was verified. That is not proof that none exists elsewhere in the unreviewed material.
+Six accessible supplied Drive archives, about 4.98 GB combined, were inventoried: 179,907 entries. A targeted text-file selection yielded 65 candidates and 48 unique content groups; only bounded previews were reviewed, not every file or archive entry. One of seven supplied Drive IDs returned 404 for an unresolved reason. A separate earlier conversation-shaped review of five archives found 636 reviewed occurrences and 610 unique hashes, with no complete provider-linked human/model turn verified. Neither review proves that no such material exists elsewhere.
 
 ## What is included
 
-The two reconstructed archives contain **847 file entries**:
+The two reconstructed archives contain **848 file entries**:
 
-- `grok-handoff.zip`: 713 entries—712 package files plus its SHA-256 manifest.
+- `grok-handoff.zip`: 714 entries—713 package files plus its SHA-256 manifest.
 - `grok-handoff-images.zip`: 134 entries—132 PNG originals, a README, and a PNG manifest.
 
-Together they contain the project prompt, brief, implementation-status snapshot, prioritized roadmap, references and rights notes, a redacted source appendix, an allowlisted set of source/document excerpts, selected static product and brand assets, and a link index for the included material. The bundle also has a SHA-256 manifest. The two archives were checked for CRC errors and manifest mismatches; exact duplicate-content checking found no duplicate groups across the 847 entries.
+Together they contain the project prompt, brief, implementation-status snapshot, prioritized roadmap, references and rights notes, a redacted source appendix, a scoped archive review and claim register, an allowlisted set of source/document excerpts, selected static product and brand assets, and a link index for the included material. The bundle also has a SHA-256 manifest. The archives were checked for CRC errors and manifest mismatches; exact duplicate-content checking found no duplicate groups among the 848 files.
 
 This is intentionally not a complete app or source export. It omits customer and payment data; credentials and environment values; private runtime stores, logs, and backups; private share identifiers; unreviewed archive contents; duplicate copies; and storefront-integrated or customer-data-connected implementation paths.
 
 ## Link audit
 
-Counts below are literal URL mentions in the **reconstructed archives**. “Direct content” excludes the generated `07_LINK_INDEX.md`; the index repeats links so it is reported separately. A mention does not prove a link was opened, verified, endorsed, or used to train a model.
+Counts below are literal GitHub URL mentions in the **reconstructed archives**. “Direct content” excludes the generated `07_LINK_INDEX.md`; the index repeats links so it is reported separately. The repository count normalizes owner/repository paths and deduplicates repeats. A mention does not prove a link was opened, verified, endorsed, or used to train a model.
 
 | Scope | Files containing GitHub repository links | GitHub URL mentions | Distinct URL strings | Distinct repositories |
 | --- | ---: | ---: | ---: | ---: |
-| Direct content, excluding the generated index | 5 | 71 | 36 | 33 |
-| All files, including the generated link index | 6 | 142 | 36 | 33 |
+| Direct content, excluding the generated index | 5 | 80 | 42 | 33 |
+| All files, including the generated link index | 6 | 160 | 42 | 33 |
 
-The direct mentions are in `04_REFERENCES_AND_RIGHTS.md` (32), `06_SAFE_SOURCE_FILES/owner-history/direct-tessera-request.md` (2), and three files under `06_SAFE_SOURCE_FILES/user-provided-text/` (37 combined: 19, 11, and 7). `07_LINK_INDEX.md` repeats the 71 GitHub mentions in its own generated entries. The index has **410 total target entries across all domains**; that is not 410 GitHub repositories.
+The direct mentions are in `04_REFERENCES_AND_RIGHTS.md` (33), `06_SAFE_SOURCE_FILES/owner-history/direct-tessera-request.md` (2), and three files under `06_SAFE_SOURCE_FILES/user-provided-text/` (45 combined: 25, 12, and 8). `07_LINK_INDEX.md` repeats the 80 GitHub mentions in its generated entries. The index has **410 total target entries across all domains**; that is not 410 GitHub repositories. The 33-item repository list is deduplicated; topic and organization pages are not counted as repositories.
 
-Google Drive and Google Docs URLs: **0 in the included archives**. Private or unreviewed links were deliberately not copied, so this does not describe every Drive file or link in the workspace.
+Google Drive and Google Docs URLs or IDs: **0 in the included packet**. Private or unreviewed links were deliberately not copied, so this does not describe every Drive file or link in the workspace.
 
 ## What to do to get there
 
@@ -75,7 +75,7 @@ The script rebuilds both files and verifies their SHA-256 hashes. Extract both r
 
 - Main archive parts: 23
 - Image companion parts: 30
-- `grok-handoff.zip`: `24b61d5c582b1342637f41611c093bfcc7834b50e1117c6cd642f660c77fd9d4`
+- `grok-handoff.zip`: `5eb22d30dede86eab0b4bf9ebd664efc115f38cb21391c8fd4dfb35e7a5d6af8`
 - `grok-handoff-images.zip`: `6fd76ff535819bdf50aacccc1ccb0bf557a514e78ae830861ce059fc6c3f37c6`
 
 The archives use standard lossless ZIP/Deflate compression at level 9. PNG and WebP assets are already compressed, so additional savings are limited; image content was not changed. The files are **not encrypted** because this repository is public. SHA-256 checks detect corruption, not disclosure.
