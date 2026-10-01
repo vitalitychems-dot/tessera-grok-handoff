@@ -1,6 +1,6 @@
 # Tessera: purpose, current state, and path forward
 
-This is a public, privacy-screened handoff for the Tessera/Grok work. It is a snapshot of selected materials—not a live service, complete workspace export, approved training corpus, or proof that every historical claim is true.
+This repository contains a privacy-screened Tessera/Grok handoff and a separate raw ZIP that was not screened. The raw ZIP is not part of the reviewed snapshot; see “Separate raw archive (unreviewed).” Neither artifact is a live service, complete workspace export, approved training corpus, or proof that every historical claim is true.
 
 ## The idea
 
@@ -28,14 +28,14 @@ Six accessible supplied Drive archives, about 4.98 GB combined, were inventoried
 
 ## What is included
 
-The two reconstructed archives contain **848 file entries**:
+The two curated reconstructed archives contain **848 file entries**:
 
 - `grok-handoff.zip`: 714 entries—713 package files plus its SHA-256 manifest.
 - `grok-handoff-images.zip`: 134 entries—132 PNG originals, a README, and a PNG manifest.
 
 Together they contain the project prompt, brief, implementation-status snapshot, prioritized roadmap, references and rights notes, a redacted source appendix, a scoped archive review and claim register, an allowlisted set of source/document excerpts, selected static product and brand assets, and a link index for the included material. The bundle also has a SHA-256 manifest. The archives were checked for CRC errors and manifest mismatches; exact duplicate-content checking found no duplicate groups among the 848 files.
 
-This is intentionally not a complete app or source export. It omits customer and payment data; credentials and environment values; private runtime stores, logs, and backups; private share identifiers; unreviewed archive contents; duplicate copies; and storefront-integrated or customer-data-connected implementation paths.
+The curated packet is intentionally not a complete app or source export. It omits customer and payment data; credentials and environment values; private runtime stores, logs, and backups; private share identifiers; unreviewed archive contents; duplicate copies; and storefront-integrated or customer-data-connected implementation paths. The separate raw ZIP below was not screened and may contain any of these categories or other sensitive material; it does not expand the scope of the curated review.
 
 ## Link audit
 
@@ -63,20 +63,26 @@ Follow the included `03_PRIORITIZED_ROADMAP.md`. In practical order:
 
 **Best next step:** write down the first release’s boundary and acceptance tests, then complete and verify the separate-service isolation work before connecting real private sources or relying on live provider behavior.
 
+## Separate raw archive (unreviewed)
+
+The repository also contains `grok-workspace_1789591148371.zip`, a separate 53,000,316-byte ZIP. It is not the approximately 3.4 GB Replit iPhone export. Its full contents were not screened before public upload. It may contain credentials, personal or customer data, private history, or other sensitive material. Do not treat it as part of the privacy-screened packet, a verified evidence source, or approved training data. Its ZIP bytes are preserved exactly across 26 numbered parts and can be reconstructed with `reassemble_handoff.py`. SHA-256: `5a10d393c4900d297008893ead0e1a963cb6b32ec83ef9389a71ec4822921123`.
+
 ## Download and integrity
 
-The archives are stored as numbered 2 MiB parts. Download this repository with **Code → Download ZIP** or clone it, extract the repository archive, then run:
+The two curated archives and the separate raw ZIP are stored as numbered 2 MiB parts. Download this repository with **Code → Download ZIP** or clone it, extract the repository archive, then run:
 
 ```bash
 python3 reassemble_handoff.py
 ```
 
-The script rebuilds both files and verifies their SHA-256 hashes. Extract both reconstructed archives into the same folder so the PNG originals merge at their indexed paths.
+The script rebuilds all three ZIP files and verifies their SHA-256 hashes. Extract the two curated archives into the same folder so the PNG originals merge at their indexed paths; keep the unreviewed raw archive separate.
 
 - Main archive parts: 23
 - Image companion parts: 30
+- Unreviewed raw workspace archive parts: 26
 - `grok-handoff.zip`: `5eb22d30dede86eab0b4bf9ebd664efc115f38cb21391c8fd4dfb35e7a5d6af8`
 - `grok-handoff-images.zip`: `6fd76ff535819bdf50aacccc1ccb0bf557a514e78ae830861ce059fc6c3f37c6`
+- `grok-workspace_1789591148371.zip` (unreviewed): `5a10d393c4900d297008893ead0e1a963cb6b32ec83ef9389a71ec4822921123`
 
 The archives use standard lossless ZIP/Deflate compression at level 9. PNG and WebP assets are already compressed, so additional savings are limited; image content was not changed. The files are **not encrypted** because this repository is public. SHA-256 checks detect corruption, not disclosure.
 
