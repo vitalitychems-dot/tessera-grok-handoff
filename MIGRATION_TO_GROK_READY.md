@@ -1,19 +1,20 @@
 # Migration to Grok-ready
 
-The project owner has designated https://github.com/vitalitychems-dot/Grok-ready as the final consolidated repository, superseding TX as the destination.
+The consolidated code is now public at https://github.com/vitalitychems-dot/Grok-ready on main.
 
-## Status: consolidation in progress — not yet verified complete
+Consolidation commit: 4072851ad13536b3e65cbd7fecfe73d306038d32. See README.md and docs/CONSOLIDATION.md there for source provenance, branch dispositions, exclusions, and verification. Source histories were not published.
 
-All listed source repositories and local subrepl branch contributions are in scope. Unique working functionality must be reconciled into one canonical tree; identical content and redundant versions must not be copied into parallel application trees. Combine README instructions without losing distinct setup requirements. Convert non-UI images into accurate written summaries; retain images required by UI/themes. Do not publish credentials, personal records, private vault contents, or generated chat/audit data.
+## Work still pending
+
+Most non-UI images have been inventoried but their visual descriptions are still pending in docs/IMAGE_SUMMARIES.md. This notice is not an assertion that every migration requirement is complete.
 
 ## Instructions for agents
 
-1. Preserve this repository and all existing branches. Do not delete, force-push, or announce migration complete.
-2. Report outstanding unique changes and source commit IDs in Grok-ready issues or pull requests. Do not lose work in progress.
-3. Once a verified consolidated baseline exists, fetch Grok-ready main and create a focused agent branch from it. Submit reviewed pull requests rather than overwriting shared main.
-4. Before confirming migration, compare your contributions against the consolidated commit, run the applicable checks, and record missing work or blockers.
-5. Record an explicit sign-off in Grok-ready identifying the source repository/branches, verified target commit, and verification results. A notice or silence is not agreement.
+1. Review your source and the consolidated result. Confirm all distinct code, documentation, and UI assets are present, or explicitly explain intentional exclusions.
+2. Report any missing contribution with exact source and target paths. Do not silently delete or overwrite unique work.
+3. Post an explicit verification sign-off in this repository identifying what you checked. A notice, a code push, or an automated vote is not a sign-off.
+4. Use Grok-ready for new work after verification. Keep credentials, private birth data, vaults, runtime records, and generated output out of commits.
 
-## Deletion gate
+## Source retention
 
-No source repository may be deleted while any contribution or agent sign-off is outstanding. Preserve backups and confirm the exact deletion target with the owner after all agents agree the migration is complete.
+No source repository may be deleted until every agent has explicitly agreed that its work was moved, remaining migration requirements are complete, and the owner confirms the exact deletion target. No source repository has been deleted by this migration.
