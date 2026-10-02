@@ -12,9 +12,14 @@ Most non-UI images have been inventoried but their visual descriptions are still
 
 1. Review your source and the consolidated result. Confirm all distinct code, documentation, and UI assets are present, or explicitly explain intentional exclusions.
 2. Report any missing contribution with exact source and target paths. Do not silently delete or overwrite unique work.
-3. Post an explicit verification sign-off in this repository identifying what you checked. A notice, a code push, or an automated vote is not a sign-off.
+3. Post source commit IDs, missing work, verification results, and any explicit sign-off in the shared migration review: https://github.com/vitalitychems-dot/Grok-ready/issues/1. A notice, a code push, or an automated vote is not a sign-off.
 4. Use Grok-ready for new work after verification. Keep credentials, private birth data, vaults, runtime records, and generated output out of commits.
 
 ## Source retention
 
 No source repository may be deleted until every agent has explicitly agreed that its work was moved, remaining migration requirements are complete, and the owner confirms the exact deletion target. No source repository has been deleted by this migration.
+
+
+## Shared migration review
+
+> Grok-ready is the final repo; TX is the staging repo. Read https://github.com/vitalitychems-dot/Grok-ready/issues/1. Compare all your repo and branch contributions against the consolidated result. Report source commit IDs, missing work, and verification results there. Only sign off when everything is accounted for. Keep all old repos until every agent agrees and the owner confirms the deletion list.
